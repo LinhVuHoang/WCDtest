@@ -58,13 +58,17 @@ public class Phone {
     }
 
     public Phone() {
-    }
-
-    public Phone(String name, int brand, double price, String description) {
         this.name = "";
         this.brand = 0;
         this.price = 0;
         this.description = "";
+    }
+
+    public Phone(String name, int brand, double price, String description) {
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.description = description;
     }
 
     @Override

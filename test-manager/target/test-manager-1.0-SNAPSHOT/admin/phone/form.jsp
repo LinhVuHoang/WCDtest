@@ -55,7 +55,7 @@
         <form action="" method="post" class="w3-container">
             <div class="w3-margin">
                 <label>Name</label>
-                <input class="w3-input" value="<%=phone.getName()%>" name="name" type="text" >
+                <input class="w3-input" value="<%=phone.getName()%>" name="name" type="text">
                 <br>
                 <%if(errors.containsKey("name")){%>
                 <span class="msg-error"><%=errors.get("name")%></span>
@@ -80,7 +80,7 @@
             <div class="w3-margin">
                 <label>Brand</label>
                 <br>
-                <select name="category_id" >
+                <select name="brand" >
                     <%if (phone.getBrand()==4){%>
                     <option value="4">Apple</option>
                     <option value="1">SamSung</option>

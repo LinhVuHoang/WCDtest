@@ -57,7 +57,7 @@
                 <th><%=list.get(i).getName()%></th>
                 <th><%=list.get(i).getDescription()%></th>
                 <th><%=list.get(i).getPrice()%></th>
-                <th><%=list.get(i).getPrice()%> VNĐ</th>
+                <th><%=list.get(i).getPrice()%></th>
                 <%if(list.get(i).getBrand()==1){%>
                 <th>SamSung</th>
                 <%}else if(list.get(i).getBrand()==2){%>

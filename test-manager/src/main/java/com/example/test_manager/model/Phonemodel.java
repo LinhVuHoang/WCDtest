@@ -20,7 +20,6 @@ public class Phonemodel {
         Connection connection = ConnectionHelper.getConnection();
         if(connection !=null) {
             try {
-
                 PreparedStatement preparedStatement =
                         connection.prepareStatement("insert into phones (name,brand,price,description) values(?,?,?,?)");
                         preparedStatement.setString(1,phone.getName());
@@ -49,7 +48,6 @@ public class Phonemodel {
                   int brand = resultSet.getInt("brand");
                   double price = resultSet.getDouble("price");
                  String description = resultSet.getString("description");
-
 
                   Phone phone = new Phone(id,name,brand,price,description);
                   result.add(phone);
